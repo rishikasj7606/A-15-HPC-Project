@@ -1,3 +1,5 @@
+# This script asynchronously fetches disaster-related data from multiple APIs (NewsAPI, ReliefWeb, GDACS, USGS),
+# normalizes the responses into a unified format, and stores the events into a MongoDB collection for analysis.
 import asyncio
 import aiohttp
 import json
@@ -117,3 +119,4 @@ async def main():
 if __name__ == "__main__":
     normalized_data = asyncio.run(main())
     print(f"Inserted {len(normalized_data)} events into MongoDB")
+
