@@ -19,7 +19,7 @@ A high-performance computing (HPC)-enabled, AI-powered system designed to:
 - **Database:** MongoDB (with indexing)  
 - **Parallel Computing:** MPI, Multiprocessing, AsyncIO  
 - **Containerization:** Docker, Docker Compose  
-- **Cloud:** AWS ECS/EKS, GCP Cloud Run, Azure Container Apps  
+- **Cloud:** GOOGLE cloud
 
 ## Key Features
 - ⚡ **Parallel API Ingestion** → Low-latency disaster data collection  
