@@ -31,13 +31,13 @@ A high-performance computing (HPC)-enabled, AI-powered system designed to:
 
 ## Workflow
 API Ingestion (AsyncIO)
-↓
+→
 Data Normalization & Validation (Pydantic)
-↓
+→
 MongoDB Storage with Indexing
-↓
+→
 Model Fine-Tuning & Preprocessing (Multiprocessing + HPC)
-↓
+→
 RAG Pipeline (Retrieval + LLM Summarization)
-↓
+→
 Docker + Cloud Deployment
