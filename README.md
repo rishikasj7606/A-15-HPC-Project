@@ -17,7 +17,7 @@ A high-performance computing (HPC)-enabled, AI-powered system designed to:
 - **Languages:** Python, Bash  
 - **Frameworks:** asyncio, aiohttp, Pydantic, HuggingFace Transformers  
 - **Database:** MongoDB (with indexing)  
-- **Parallel Computing:** MPI, Multiprocessing, AsyncIO  
+- **Parallel Computing:** Multiprocessing, AsyncIO  
 - **Containerization:** Docker, Docker Compose  
 - **Cloud:** GOOGLE cloud
 
