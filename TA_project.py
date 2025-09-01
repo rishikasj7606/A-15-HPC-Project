@@ -1,1524 +1,379 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": []
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    },
-    "widgets": {
-      "application/vnd.jupyter.widget-state+json": {
-        "f68dcad5c5cd4280a14bcecad2df994d": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HBoxModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HBoxModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HBoxView",
-            "box_style": "",
-            "children": [
-              "IPY_MODEL_194768f8da844f1d9f46af9537948bbc",
-              "IPY_MODEL_00254953d6b04c4c85b3f15bd03141b2",
-              "IPY_MODEL_9dbbca09e6254ae985ec8020fa38f03a"
-            ],
-            "layout": "IPY_MODEL_26c45f78639a441b956b8e8360b462eb"
-          }
-        },
-        "194768f8da844f1d9f46af9537948bbc": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HTMLModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HTMLModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HTMLView",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_fa94c4725226496783d083313a2bb0f2",
-            "placeholder": "​",
-            "style": "IPY_MODEL_a3b3543d27e847c3aa1f27727d31b196",
-            "value": "Map: 100%"
-          }
-        },
-        "00254953d6b04c4c85b3f15bd03141b2": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "FloatProgressModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "FloatProgressModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "ProgressView",
-            "bar_style": "success",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_61f9976db922410eba23a959a02de4ad",
-            "max": 152,
-            "min": 0,
-            "orientation": "horizontal",
-            "style": "IPY_MODEL_2c2bc30d6bb34918a16f8b9e5d3aa6c9",
-            "value": 152
-          }
-        },
-        "9dbbca09e6254ae985ec8020fa38f03a": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HTMLModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HTMLModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HTMLView",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_4815ded581c9462caa009ed971fcfd7b",
-            "placeholder": "​",
-            "style": "IPY_MODEL_a02a340b040c4d839a27c0b5287c111d",
-            "value": " 152/152 [00:00&lt;00:00, 2563.86 examples/s]"
-          }
-        },
-        "26c45f78639a441b956b8e8360b462eb": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "fa94c4725226496783d083313a2bb0f2": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "a3b3543d27e847c3aa1f27727d31b196": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "DescriptionStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "DescriptionStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "description_width": ""
-          }
-        },
-        "61f9976db922410eba23a959a02de4ad": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "2c2bc30d6bb34918a16f8b9e5d3aa6c9": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "ProgressStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "ProgressStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "bar_color": null,
-            "description_width": ""
-          }
-        },
-        "4815ded581c9462caa009ed971fcfd7b": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "a02a340b040c4d839a27c0b5287c111d": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "DescriptionStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "DescriptionStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "description_width": ""
-          }
-        },
-        "db8406f4b4ee4652b653a517f4e6122d": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HBoxModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HBoxModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HBoxView",
-            "box_style": "",
-            "children": [
-              "IPY_MODEL_4530c6c44d324ce3b50766afe2767aa2",
-              "IPY_MODEL_69a14bf52bd74453a6503a34e54c8df3",
-              "IPY_MODEL_36244141151646ffa0218932651744d9"
-            ],
-            "layout": "IPY_MODEL_44b9e3b6585946189f5dc0716a2fda69"
-          }
-        },
-        "4530c6c44d324ce3b50766afe2767aa2": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HTMLModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HTMLModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HTMLView",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_2a887b54aa11448faea45a3d20551a66",
-            "placeholder": "​",
-            "style": "IPY_MODEL_5fe176588eca4cb892c24da042b892a8",
-            "value": "Map: 100%"
-          }
-        },
-        "69a14bf52bd74453a6503a34e54c8df3": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "FloatProgressModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "FloatProgressModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "ProgressView",
-            "bar_style": "success",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_c5cf054d0dd04255b497dfb039f2346c",
-            "max": 2,
-            "min": 0,
-            "orientation": "horizontal",
-            "style": "IPY_MODEL_24cd75e9771a4b97a69551f09e54337c",
-            "value": 2
-          }
-        },
-        "36244141151646ffa0218932651744d9": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "HTMLModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_dom_classes": [],
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "HTMLModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/controls",
-            "_view_module_version": "1.5.0",
-            "_view_name": "HTMLView",
-            "description": "",
-            "description_tooltip": null,
-            "layout": "IPY_MODEL_9259e5c799be49a2b6f0674558dc6b39",
-            "placeholder": "​",
-            "style": "IPY_MODEL_177cebe143c4455bb51e485352f0f8eb",
-            "value": " 2/2 [00:00&lt;00:00, 70.95 examples/s]"
-          }
-        },
-        "44b9e3b6585946189f5dc0716a2fda69": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "2a887b54aa11448faea45a3d20551a66": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "5fe176588eca4cb892c24da042b892a8": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "DescriptionStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "DescriptionStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "description_width": ""
-          }
-        },
-        "c5cf054d0dd04255b497dfb039f2346c": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "24cd75e9771a4b97a69551f09e54337c": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "ProgressStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "ProgressStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "bar_color": null,
-            "description_width": ""
-          }
-        },
-        "9259e5c799be49a2b6f0674558dc6b39": {
-          "model_module": "@jupyter-widgets/base",
-          "model_name": "LayoutModel",
-          "model_module_version": "1.2.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/base",
-            "_model_module_version": "1.2.0",
-            "_model_name": "LayoutModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "LayoutView",
-            "align_content": null,
-            "align_items": null,
-            "align_self": null,
-            "border": null,
-            "bottom": null,
-            "display": null,
-            "flex": null,
-            "flex_flow": null,
-            "grid_area": null,
-            "grid_auto_columns": null,
-            "grid_auto_flow": null,
-            "grid_auto_rows": null,
-            "grid_column": null,
-            "grid_gap": null,
-            "grid_row": null,
-            "grid_template_areas": null,
-            "grid_template_columns": null,
-            "grid_template_rows": null,
-            "height": null,
-            "justify_content": null,
-            "justify_items": null,
-            "left": null,
-            "margin": null,
-            "max_height": null,
-            "max_width": null,
-            "min_height": null,
-            "min_width": null,
-            "object_fit": null,
-            "object_position": null,
-            "order": null,
-            "overflow": null,
-            "overflow_x": null,
-            "overflow_y": null,
-            "padding": null,
-            "right": null,
-            "top": null,
-            "visibility": null,
-            "width": null
-          }
-        },
-        "177cebe143c4455bb51e485352f0f8eb": {
-          "model_module": "@jupyter-widgets/controls",
-          "model_name": "DescriptionStyleModel",
-          "model_module_version": "1.5.0",
-          "state": {
-            "_model_module": "@jupyter-widgets/controls",
-            "_model_module_version": "1.5.0",
-            "_model_name": "DescriptionStyleModel",
-            "_view_count": null,
-            "_view_module": "@jupyter-widgets/base",
-            "_view_module_version": "1.2.0",
-            "_view_name": "StyleView",
-            "description_width": ""
-          }
+##Real-Time Disaster Response Summarization Using LLM
+
+
+!pip install transformers datasets accelerate peft bitsandbytes
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+!pip install requests beautifulsoup4 pandas numpy matplotlib seaborn
+!pip install evaluate rouge-score bert-score sacrebleu
+
+import os
+import requests
+import pandas as pd
+import numpy as np
+import json
+import time
+from datetime import datetime, timedelta
+import re
+from typing import List, Dict, Any
+import warnings
+warnings.filterwarnings('ignore')
+import torch
+
+from transformers import (
+    AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM,
+    TrainingArguments, Trainer, DataCollatorForSeq2Seq,
+    pipeline, BitsAndBytesConfig
+)
+from datasets import Dataset, DatasetDict
+from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
+import evaluate
+from bert_score import score
+
+
+class CrisisDataCollector:
+    def __init__(self):
+        self.news_api_key = "6cfb3ad6433845bea794f002fa1913e3"
+        self.session = requests.Session()
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
+
+    def collect_reliefweb_data(self, limit=50):
+        """Collect crisis reports from ReliefWeb API"""
+        url = "https://api.reliefweb.int/v1/reports"
+        params = {
+            'appname': 'crisis-llm',
+            'limit': 50,
+            'filter[status]': 'published',
+            'filter[date.created][from]': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d'),
+            'fields[include]': ['title', 'body', 'date', 'disaster_type', 'country', 'source']
         }
-      }
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "source": [
-        "##Real-Time Disaster Response Summarization Using LLM\n"
-      ],
-      "metadata": {
-        "id": "gGSzQXyWWmUu"
-      }
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "!pip install transformers datasets accelerate peft bitsandbytes\n",
-        "!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118\n",
-        "!pip install requests beautifulsoup4 pandas numpy matplotlib seaborn\n",
-        "!pip install evaluate rouge-score bert-score sacrebleu"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "J4hrRcDFDuPl",
-        "outputId": "10d1aaab-8dce-4b6f-f139-9df939a8cdb5"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Requirement already satisfied: transformers in /usr/local/lib/python3.12/dist-packages (4.55.2)\n",
-            "Requirement already satisfied: datasets in /usr/local/lib/python3.12/dist-packages (4.0.0)\n",
-            "Requirement already satisfied: accelerate in /usr/local/lib/python3.12/dist-packages (1.10.0)\n",
-            "Requirement already satisfied: peft in /usr/local/lib/python3.12/dist-packages (0.17.0)\n",
-            "Requirement already satisfied: bitsandbytes in /usr/local/lib/python3.12/dist-packages (0.47.0)\n",
-            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from transformers) (3.19.1)\n",
-            "Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.34.4)\n",
-            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.0.2)\n",
-            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (25.0)\n",
-            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers) (6.0.2)\n",
-            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2024.11.6)\n",
-            "Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from transformers) (2.32.4)\n",
-            "Requirement already satisfied: tokenizers<0.22,>=0.21 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.21.4)\n",
-            "Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.6.2)\n",
-            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.12/dist-packages (from transformers) (4.67.1)\n",
-            "Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets) (18.1.0)\n",
-            "Requirement already satisfied: dill<0.3.9,>=0.3.0 in /usr/local/lib/python3.12/dist-packages (from datasets) (0.3.8)\n",
-            "Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (from datasets) (2.2.2)\n",
-            "Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from datasets) (3.5.0)\n",
-            "Requirement already satisfied: multiprocess<0.70.17 in /usr/local/lib/python3.12/dist-packages (from datasets) (0.70.16)\n",
-            "Requirement already satisfied: fsspec<=2025.3.0,>=2023.1.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (2025.3.0)\n",
-            "Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from accelerate) (5.9.5)\n",
-            "Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from accelerate) (2.8.0+cu126)\n",
-            "Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (3.12.15)\n",
-            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.14.1)\n",
-            "Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.7)\n",
-            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (3.4.3)\n",
-            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (3.10)\n",
-            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2.5.0)\n",
-            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests->transformers) (2025.8.3)\n",
-            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (75.2.0)\n",
-            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.13.3)\n",
-            "Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.5)\n",
-            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.1.6)\n",
-            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.80)\n",
-            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (9.10.2.21)\n",
-            "Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.4.1)\n",
-            "Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (11.3.0.4)\n",
-            "Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (10.3.7.77)\n",
-            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (11.7.1.2)\n",
-            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.5.4.2)\n",
-            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (0.7.1)\n",
-            "Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (2.27.3)\n",
-            "Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (12.6.85)\n",
-            "Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (1.11.1.6)\n",
-            "Requirement already satisfied: triton==3.4.0 in /usr/local/lib/python3.12/dist-packages (from torch>=2.0.0->accelerate) (3.4.0)\n",
-            "Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2.9.0.post0)\n",
-            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2025.2)\n",
-            "Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2025.2)\n",
-            "Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (2.6.1)\n",
-            "Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (1.4.0)\n",
-            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (25.3.0)\n",
-            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (1.7.0)\n",
-            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (6.6.4)\n",
-            "Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (0.3.2)\n",
-            "Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets) (1.20.1)\n",
-            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.17.0)\n",
-            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)\n",
-            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.2)\n",
-            "Looking in indexes: https://download.pytorch.org/whl/cu118\n",
-            "Requirement already satisfied: torch in /usr/local/lib/python3.12/dist-packages (2.8.0+cu126)\n",
-            "Requirement already satisfied: torchvision in /usr/local/lib/python3.12/dist-packages (0.23.0+cu126)\n",
-            "Requirement already satisfied: torchaudio in /usr/local/lib/python3.12/dist-packages (2.8.0+cu126)\n",
-            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from torch) (3.19.1)\n",
-            "Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/dist-packages (from torch) (4.14.1)\n",
-            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch) (75.2.0)\n",
-            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch) (1.13.3)\n",
-            "Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch) (3.5)\n",
-            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch) (3.1.6)\n",
-            "Requirement already satisfied: fsspec in /usr/local/lib/python3.12/dist-packages (from torch) (2025.3.0)\n",
-            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.80)\n",
-            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch) (9.10.2.21)\n",
-            "Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.4.1)\n",
-            "Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.12/dist-packages (from torch) (11.3.0.4)\n",
-            "Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.12/dist-packages (from torch) (10.3.7.77)\n",
-            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.12/dist-packages (from torch) (11.7.1.2)\n",
-            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.12/dist-packages (from torch) (12.5.4.2)\n",
-            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch) (0.7.1)\n",
-            "Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /usr/local/lib/python3.12/dist-packages (from torch) (2.27.3)\n",
-            "Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.12/dist-packages (from torch) (12.6.85)\n",
-            "Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.12/dist-packages (from torch) (1.11.1.6)\n",
-            "Requirement already satisfied: triton==3.4.0 in /usr/local/lib/python3.12/dist-packages (from torch) (3.4.0)\n",
-            "Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from torchvision) (2.0.2)\n",
-            "Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /usr/local/lib/python3.12/dist-packages (from torchvision) (11.3.0)\n",
-            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch) (1.3.0)\n",
-            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch) (3.0.2)\n",
-            "Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (2.32.4)\n",
-            "Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.12/dist-packages (4.13.4)\n",
-            "Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (2.2.2)\n",
-            "Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (2.0.2)\n",
-            "Requirement already satisfied: matplotlib in /usr/local/lib/python3.12/dist-packages (3.10.0)\n",
-            "Requirement already satisfied: seaborn in /usr/local/lib/python3.12/dist-packages (0.13.2)\n",
-            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests) (3.4.3)\n",
-            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests) (3.10)\n",
-            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests) (2.5.0)\n",
-            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests) (2025.8.3)\n",
-            "Requirement already satisfied: soupsieve>1.2 in /usr/local/lib/python3.12/dist-packages (from beautifulsoup4) (2.7)\n",
-            "Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.12/dist-packages (from beautifulsoup4) (4.14.1)\n",
-            "Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas) (2.9.0.post0)\n",
-            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas) (2025.2)\n",
-            "Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas) (2025.2)\n",
-            "Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (1.3.3)\n",
-            "Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (0.12.1)\n",
-            "Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (4.59.1)\n",
-            "Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (1.4.9)\n",
-            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (25.0)\n",
-            "Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (11.3.0)\n",
-            "Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib) (3.2.3)\n",
-            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)\n",
-            "Requirement already satisfied: evaluate in /usr/local/lib/python3.12/dist-packages (0.4.5)\n",
-            "Requirement already satisfied: rouge-score in /usr/local/lib/python3.12/dist-packages (0.1.2)\n",
-            "Requirement already satisfied: bert-score in /usr/local/lib/python3.12/dist-packages (0.3.13)\n",
-            "Requirement already satisfied: sacrebleu in /usr/local/lib/python3.12/dist-packages (2.5.1)\n",
-            "Requirement already satisfied: datasets>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from evaluate) (4.0.0)\n",
-            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from evaluate) (2.0.2)\n",
-            "Requirement already satisfied: dill in /usr/local/lib/python3.12/dist-packages (from evaluate) (0.3.8)\n",
-            "Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (from evaluate) (2.2.2)\n",
-            "Requirement already satisfied: requests>=2.19.0 in /usr/local/lib/python3.12/dist-packages (from evaluate) (2.32.4)\n",
-            "Requirement already satisfied: tqdm>=4.62.1 in /usr/local/lib/python3.12/dist-packages (from evaluate) (4.67.1)\n",
-            "Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from evaluate) (3.5.0)\n",
-            "Requirement already satisfied: multiprocess in /usr/local/lib/python3.12/dist-packages (from evaluate) (0.70.16)\n",
-            "Requirement already satisfied: fsspec>=2021.05.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (2025.3.0)\n",
-            "Requirement already satisfied: huggingface-hub>=0.7.0 in /usr/local/lib/python3.12/dist-packages (from evaluate) (0.34.4)\n",
-            "Requirement already satisfied: packaging in /usr/local/lib/python3.12/dist-packages (from evaluate) (25.0)\n",
-            "Requirement already satisfied: absl-py in /usr/local/lib/python3.12/dist-packages (from rouge-score) (1.4.0)\n",
-            "Requirement already satisfied: nltk in /usr/local/lib/python3.12/dist-packages (from rouge-score) (3.9.1)\n",
-            "Requirement already satisfied: six>=1.14.0 in /usr/local/lib/python3.12/dist-packages (from rouge-score) (1.17.0)\n",
-            "Requirement already satisfied: torch>=1.0.0 in /usr/local/lib/python3.12/dist-packages (from bert-score) (2.8.0+cu126)\n",
-            "Requirement already satisfied: transformers>=3.0.0 in /usr/local/lib/python3.12/dist-packages (from bert-score) (4.55.2)\n",
-            "Requirement already satisfied: matplotlib in /usr/local/lib/python3.12/dist-packages (from bert-score) (3.10.0)\n",
-            "Requirement already satisfied: portalocker in /usr/local/lib/python3.12/dist-packages (from sacrebleu) (3.2.0)\n",
-            "Requirement already satisfied: regex in /usr/local/lib/python3.12/dist-packages (from sacrebleu) (2024.11.6)\n",
-            "Requirement already satisfied: tabulate>=0.8.9 in /usr/local/lib/python3.12/dist-packages (from sacrebleu) (0.9.0)\n",
-            "Requirement already satisfied: colorama in /usr/local/lib/python3.12/dist-packages (from sacrebleu) (0.4.6)\n",
-            "Requirement already satisfied: lxml in /usr/local/lib/python3.12/dist-packages (from sacrebleu) (5.4.0)\n",
-            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from datasets>=2.0.0->evaluate) (3.19.1)\n",
-            "Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.0.0->evaluate) (18.1.0)\n",
-            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.0.0->evaluate) (6.0.2)\n",
-            "Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (3.12.15)\n",
-            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.7.0->evaluate) (4.14.1)\n",
-            "Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.7.0->evaluate) (1.1.7)\n",
-            "Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas->evaluate) (2.9.0.post0)\n",
-            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas->evaluate) (2025.2)\n",
-            "Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas->evaluate) (2025.2)\n",
-            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.19.0->evaluate) (3.4.3)\n",
-            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.12/dist-packages (from requests>=2.19.0->evaluate) (3.10)\n",
-            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.19.0->evaluate) (2.5.0)\n",
-            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests>=2.19.0->evaluate) (2025.8.3)\n",
-            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (75.2.0)\n",
-            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (1.13.3)\n",
-            "Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (3.5)\n",
-            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (3.1.6)\n",
-            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.80)\n",
-            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (9.10.2.21)\n",
-            "Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.4.1)\n",
-            "Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (11.3.0.4)\n",
-            "Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (10.3.7.77)\n",
-            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (11.7.1.2)\n",
-            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.5.4.2)\n",
-            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (0.7.1)\n",
-            "Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (2.27.3)\n",
-            "Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.77)\n",
-            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (12.6.85)\n",
-            "Requirement already satisfied: nvidia-cufile-cu12==1.11.1.6 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (1.11.1.6)\n",
-            "Requirement already satisfied: triton==3.4.0 in /usr/local/lib/python3.12/dist-packages (from torch>=1.0.0->bert-score) (3.4.0)\n",
-            "Requirement already satisfied: tokenizers<0.22,>=0.21 in /usr/local/lib/python3.12/dist-packages (from transformers>=3.0.0->bert-score) (0.21.4)\n",
-            "Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers>=3.0.0->bert-score) (0.6.2)\n",
-            "Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (1.3.3)\n",
-            "Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (0.12.1)\n",
-            "Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (4.59.1)\n",
-            "Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (1.4.9)\n",
-            "Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (11.3.0)\n",
-            "Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib->bert-score) (3.2.3)\n",
-            "Requirement already satisfied: click in /usr/local/lib/python3.12/dist-packages (from nltk->rouge-score) (8.2.1)\n",
-            "Requirement already satisfied: joblib in /usr/local/lib/python3.12/dist-packages (from nltk->rouge-score) (1.5.1)\n",
-            "Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (2.6.1)\n",
-            "Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.4.0)\n",
-            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (25.3.0)\n",
-            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.7.0)\n",
-            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (6.6.4)\n",
-            "Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (0.3.2)\n",
-            "Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.20.1)\n",
-            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=1.0.0->bert-score) (1.3.0)\n",
-            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch>=1.0.0->bert-score) (3.0.2)\n"
-          ]
+
+        try:
+            response = self.session.get(url, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+
+            reports = []
+            for item in data.get('data', []):
+                fields = item.get('fields', {})
+                reports.append({
+                    'title': fields.get('title', ''),
+                    'body': fields.get('body', ''),
+                    'date': fields.get('date', {}).get('created', ''),
+                    'disaster_type': fields.get('disaster_type', []),
+                    'country': fields.get('country', []),
+                    'source': fields.get('source', []),
+                    'data_source': 'reliefweb'
+                })
+
+            print(f"Collected {len(reports)} reports from ReliefWeb")
+            return reports
+
+        except Exception as e:
+            print(f"Error collecting ReliefWeb data: {e}")
+            return []
+
+    def collect_gdacs_data(self):
+        """Collect disaster alerts from GDACS"""
+        url = "https://www.gdacs.org/xml/rss.xml"
+
+        try:
+            response = self.session.get(url, timeout=60)
+            response.raise_for_status()
+
+            # Parse RSS/XML (simplified parsing)
+            import xml.etree.ElementTree as ET
+            root = ET.fromstring(response.content)
+
+            alerts = []
+            for item in root.findall('.//item'):
+                title = item.find('title')
+                description = item.find('description')
+                pub_date = item.find('pubDate')
+
+                alerts.append({
+                    'title': title.text if title is not None else '',
+                    'body': description.text if description is not None else '',
+                    'date': pub_date.text if pub_date is not None else '',
+                    'data_source': 'gdacs'
+                })
+
+            print(f"Collected {len(alerts)} alerts from GDACS")
+            return alerts
+
+        except Exception as e:
+            print(f"Error collecting GDACS data: {e}")
+            return []
+
+    def collect_usgs_data(self):
+        """Collect earthquake data from USGS"""
+        url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson"
+
+        try:
+            response = self.session.get(url, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+
+            earthquakes = []
+            for feature in data.get('features', []):
+                props = feature.get('properties', {})
+                coords = feature.get('geometry', {}).get('coordinates', [])
+
+                # Generate descriptive text
+                magnitude = props.get('mag', 0)
+                place = props.get('place', 'Unknown location')
+                time_ms = props.get('time', 0)
+                date = datetime.fromtimestamp(time_ms/1000).strftime('%Y-%m-%d %H:%M:%S')
+
+                body = f"Magnitude {magnitude} earthquake occurred at {place}. "
+                body += f"Depth: {coords[2] if len(coords) > 2 else 'Unknown'} km. "
+                body += f"Occurred on {date}."
+
+                earthquakes.append({
+                    'title': f"M{magnitude} - {place}",
+                    'body': body,
+                    'date': date,
+                    'magnitude': magnitude,
+                    'coordinates': coords,
+                    'data_source': 'usgs'
+                })
+
+            print(f"Collected {len(earthquakes)} earthquakes from USGS")
+            return earthquakes
+
+        except Exception as e:
+            print(f"Error collecting USGS data: {e}")
+            return []
+
+    def collect_news_data(self, query="earthquake OR flood OR hurricane OR disaster", limit=50):
+        """Collect news articles using News API"""
+        if not self.news_api_key or self.news_api_key == "YOUR_NEWS_API_KEY":
+            print("News API key not provided. Skipping news collection.")
+            return []
+
+        url = "https://newsapi.org/v2/everything"
+        params = {
+            'apiKey': self.news_api_key,
+            'q': query,
+            'sortBy': 'publishedAt',
+            'pageSize': min(limit, 100),
+            'from': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
         }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "import os\n",
-        "import requests\n",
-        "import pandas as pd\n",
-        "import numpy as np\n",
-        "import json\n",
-        "import time\n",
-        "from datetime import datetime, timedelta\n",
-        "import re\n",
-        "from typing import List, Dict, Any\n",
-        "import warnings\n",
-        "warnings.filterwarnings('ignore')\n",
-        "import torch"
-      ],
-      "metadata": {
-        "id": "74AOH9GSDwUx"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "id": "xtGfn1KwDkUW"
-      },
-      "outputs": [],
-      "source": [
-        "from transformers import (\n",
-        "    AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM,\n",
-        "    TrainingArguments, Trainer, DataCollatorForSeq2Seq,\n",
-        "    pipeline, BitsAndBytesConfig\n",
-        ")\n",
-        "from datasets import Dataset, DatasetDict\n",
-        "from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training\n",
-        "import evaluate\n",
-        "from bert_score import score\n",
-        "\n",
-        "\n",
-        "class CrisisDataCollector:\n",
-        "    def __init__(self):\n",
-        "        self.news_api_key = \"6cfb3ad6433845bea794f002fa1913e3\"\n",
-        "        self.session = requests.Session()\n",
-        "        self.session.headers.update({\n",
-        "            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'\n",
-        "        })\n",
-        "\n",
-        "    def collect_reliefweb_data(self, limit=50):\n",
-        "        \"\"\"Collect crisis reports from ReliefWeb API\"\"\"\n",
-        "        url = \"https://api.reliefweb.int/v1/reports\"\n",
-        "        params = {\n",
-        "            'appname': 'crisis-llm',\n",
-        "            'limit': 50,\n",
-        "            'filter[status]': 'published',\n",
-        "            'filter[date.created][from]': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d'),\n",
-        "            'fields[include]': ['title', 'body', 'date', 'disaster_type', 'country', 'source']\n",
-        "        }\n",
-        "\n",
-        "        try:\n",
-        "            response = self.session.get(url, params=params, timeout=30)\n",
-        "            response.raise_for_status()\n",
-        "            data = response.json()\n",
-        "\n",
-        "            reports = []\n",
-        "            for item in data.get('data', []):\n",
-        "                fields = item.get('fields', {})\n",
-        "                reports.append({\n",
-        "                    'title': fields.get('title', ''),\n",
-        "                    'body': fields.get('body', ''),\n",
-        "                    'date': fields.get('date', {}).get('created', ''),\n",
-        "                    'disaster_type': fields.get('disaster_type', []),\n",
-        "                    'country': fields.get('country', []),\n",
-        "                    'source': fields.get('source', []),\n",
-        "                    'data_source': 'reliefweb'\n",
-        "                })\n",
-        "\n",
-        "            print(f\"Collected {len(reports)} reports from ReliefWeb\")\n",
-        "            return reports\n",
-        "\n",
-        "        except Exception as e:\n",
-        "            print(f\"Error collecting ReliefWeb data: {e}\")\n",
-        "            return []\n",
-        "\n",
-        "    def collect_gdacs_data(self):\n",
-        "        \"\"\"Collect disaster alerts from GDACS\"\"\"\n",
-        "        url = \"https://www.gdacs.org/xml/rss.xml\"\n",
-        "\n",
-        "        try:\n",
-        "            response = self.session.get(url, timeout=60)\n",
-        "            response.raise_for_status()\n",
-        "\n",
-        "            # Parse RSS/XML (simplified parsing)\n",
-        "            import xml.etree.ElementTree as ET\n",
-        "            root = ET.fromstring(response.content)\n",
-        "\n",
-        "            alerts = []\n",
-        "            for item in root.findall('.//item'):\n",
-        "                title = item.find('title')\n",
-        "                description = item.find('description')\n",
-        "                pub_date = item.find('pubDate')\n",
-        "\n",
-        "                alerts.append({\n",
-        "                    'title': title.text if title is not None else '',\n",
-        "                    'body': description.text if description is not None else '',\n",
-        "                    'date': pub_date.text if pub_date is not None else '',\n",
-        "                    'data_source': 'gdacs'\n",
-        "                })\n",
-        "\n",
-        "            print(f\"Collected {len(alerts)} alerts from GDACS\")\n",
-        "            return alerts\n",
-        "\n",
-        "        except Exception as e:\n",
-        "            print(f\"Error collecting GDACS data: {e}\")\n",
-        "            return []\n",
-        "\n",
-        "    def collect_usgs_data(self):\n",
-        "        \"\"\"Collect earthquake data from USGS\"\"\"\n",
-        "        url = \"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson\"\n",
-        "\n",
-        "        try:\n",
-        "            response = self.session.get(url, timeout=30)\n",
-        "            response.raise_for_status()\n",
-        "            data = response.json()\n",
-        "\n",
-        "            earthquakes = []\n",
-        "            for feature in data.get('features', []):\n",
-        "                props = feature.get('properties', {})\n",
-        "                coords = feature.get('geometry', {}).get('coordinates', [])\n",
-        "\n",
-        "                # Generate descriptive text\n",
-        "                magnitude = props.get('mag', 0)\n",
-        "                place = props.get('place', 'Unknown location')\n",
-        "                time_ms = props.get('time', 0)\n",
-        "                date = datetime.fromtimestamp(time_ms/1000).strftime('%Y-%m-%d %H:%M:%S')\n",
-        "\n",
-        "                body = f\"Magnitude {magnitude} earthquake occurred at {place}. \"\n",
-        "                body += f\"Depth: {coords[2] if len(coords) > 2 else 'Unknown'} km. \"\n",
-        "                body += f\"Occurred on {date}.\"\n",
-        "\n",
-        "                earthquakes.append({\n",
-        "                    'title': f\"M{magnitude} - {place}\",\n",
-        "                    'body': body,\n",
-        "                    'date': date,\n",
-        "                    'magnitude': magnitude,\n",
-        "                    'coordinates': coords,\n",
-        "                    'data_source': 'usgs'\n",
-        "                })\n",
-        "\n",
-        "            print(f\"Collected {len(earthquakes)} earthquakes from USGS\")\n",
-        "            return earthquakes\n",
-        "\n",
-        "        except Exception as e:\n",
-        "            print(f\"Error collecting USGS data: {e}\")\n",
-        "            return []\n",
-        "\n",
-        "    def collect_news_data(self, query=\"earthquake OR flood OR hurricane OR disaster\", limit=50):\n",
-        "        \"\"\"Collect news articles using News API\"\"\"\n",
-        "        if not self.news_api_key or self.news_api_key == \"YOUR_NEWS_API_KEY\":\n",
-        "            print(\"News API key not provided. Skipping news collection.\")\n",
-        "            return []\n",
-        "\n",
-        "        url = \"https://newsapi.org/v2/everything\"\n",
-        "        params = {\n",
-        "            'apiKey': self.news_api_key,\n",
-        "            'q': query,\n",
-        "            'sortBy': 'publishedAt',\n",
-        "            'pageSize': min(limit, 100),\n",
-        "            'from': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')\n",
-        "        }\n",
-        "\n",
-        "        try:\n",
-        "            response = self.session.get(url, params=params, timeout=30)\n",
-        "            response.raise_for_status()\n",
-        "            data = response.json()\n",
-        "\n",
-        "            articles = []\n",
-        "            for article in data.get('articles', []):\n",
-        "                articles.append({\n",
-        "                    'title': article.get('title', ''),\n",
-        "                    'body': article.get('description', '') + ' ' + article.get('content', ''),\n",
-        "                    'date': article.get('publishedAt', ''),\n",
-        "                    'source': article.get('source', {}).get('name', ''),\n",
-        "                    'url': article.get('url', ' '),\n",
-        "                    'data_source': 'news_api'\n",
-        "                })\n",
-        "\n",
-        "            print(f\"Collected {len(articles)} news articles\")\n",
-        "            return articles\n",
-        "\n",
-        "        except Exception as e:\n",
-        "            print(f\"Error collecting news data: {e}\")\n",
-        "            return []\n",
-        "\n",
-        "    def collect_all_data(self):\n",
-        "        \"\"\"Collect data from all sources\"\"\"\n",
-        "        all_data = []\n",
-        "\n",
-        "        print(\"Collecting crisis data from multiple sources...\")\n",
-        "\n",
-        "        # Collect from all sources\n",
-        "        all_data.extend(self.collect_reliefweb_data())\n",
-        "        all_data.extend(self.collect_gdacs_data())\n",
-        "        all_data.extend(self.collect_usgs_data())\n",
-        "        all_data.extend(self.collect_news_data())\n",
-        "\n",
-        "        # Create DataFrame\n",
-        "        df = pd.DataFrame(all_data)\n",
-        "\n",
-        "        # Clean and preprocess\n",
-        "        if not df.empty:\n",
-        "            df['body'] = df['body'].fillna('')\n",
-        "            df['title'] = df['title'].fillna('')\n",
-        "            df['body'] = df['body'].str.strip()\n",
-        "            df['title'] = df['title'].str.strip()\n",
-        "            nbh\n",
-        "            # Remove empty entries\n",
-        "            df = df[(df['title'] != '') | (df['body'] != '')]\n",
-        "\n",
-        "        print(f\"Total collected: {len(df)} crisis reports\")\n",
-        "        return df"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# Assume df is the DataFrame from CrisisDataCollector.collect_all_data()\n",
-        "# We'll create input: \"Summarize this crisis report\" and target: the body text\n",
-        "\n",
-        "def prepare_dataset(df: pd.DataFrame):\n",
-        "    # Make sure 'body' is not empty\n",
-        "    df = df[df['body'].str.strip() != ''].reset_index(drop=True)\n",
-        "\n",
-        "    dataset = pd.DataFrame({\n",
-        "        \"input_text\": [\"Summarize this crisis report: \" + t for t in df['title']],\n",
-        "        \"target_text\": df['body']\n",
-        "    })\n",
-        "\n",
-        "    from datasets import Dataset\n",
-        "    return Dataset.from_pandas(dataset)\n",
-        "\n",
-        "dataset = prepare_dataset(df)\n"
-      ],
-      "metadata": {
-        "id": "-BqoIi62GUxS"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "model_name = \"t5-small\"  # You can replace with a larger model if GPU memory allows\n",
-        "tokenizer = AutoTokenizer.from_pretrained(model_name)\n",
-        "\n",
-        "max_input_length = 512\n",
-        "max_target_length = 256\n",
-        "\n",
-        "def tokenize(batch):\n",
-        "    model_inputs = tokenizer(batch[\"input_text\"], max_length=max_input_length, truncation=True)\n",
-        "    labels = tokenizer(batch[\"target_text\"], max_length=max_target_length, truncation=True)\n",
-        "    model_inputs[\"labels\"] = labels[\"input_ids\"]\n",
-        "    return model_inputs\n",
-        "\n",
-        "tokenized_dataset = dataset.map(tokenize, batched=True)\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 49,
-          "referenced_widgets": [
-            "f68dcad5c5cd4280a14bcecad2df994d",
-            "194768f8da844f1d9f46af9537948bbc",
-            "00254953d6b04c4c85b3f15bd03141b2",
-            "9dbbca09e6254ae985ec8020fa38f03a",
-            "26c45f78639a441b956b8e8360b462eb",
-            "fa94c4725226496783d083313a2bb0f2",
-            "a3b3543d27e847c3aa1f27727d31b196",
-            "61f9976db922410eba23a959a02de4ad",
-            "2c2bc30d6bb34918a16f8b9e5d3aa6c9",
-            "4815ded581c9462caa009ed971fcfd7b",
-            "a02a340b040c4d839a27c0b5287c111d"
-          ]
-        },
-        "id": "T029D7DeG6nj",
-        "outputId": "9ff41d55-fec5-4616-d478-e7147a53cf63"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Map:   0%|          | 0/152 [00:00<?, ? examples/s]"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "f68dcad5c5cd4280a14bcecad2df994d"
-            }
-          },
-          "metadata": {}
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "from transformers import AutoModelForSeq2SeqLM\n",
-        "from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training\n",
-        "from transformers import AutoTokenizer\n",
-        "# Load base model in 4-bit\n",
-        "model = AutoModelForSeq2SeqLM.from_pretrained(\n",
-        "    model_name,\n",
-        "    load_in_4bit=True,\n",
-        "    device_map=\"auto\"\n",
-        ")\n",
-        "\n",
-        "# Prepare model for k-bit training\n",
-        "model = prepare_model_for_kbit_training(model)\n",
-        "\n",
-        "# Configure LoRA\n",
-        "lora_config = LoraConfig(\n",
-        "    r=8,\n",
-        "    lora_alpha=32,\n",
-        "    target_modules=[\"q\", \"v\"],  # typical target modules\n",
-        "    lora_dropout=0.1,\n",
-        "    bias=\"none\",\n",
-        "    task_type=TaskType.SEQ_2_SEQ_LM\n",
-        ")\n",
-        "\n",
-        "model = get_peft_model(model, lora_config)\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "nCg2XkztG-47",
-        "outputId": "a4355635-5f66-4c6f-d818-e298e4e1831f"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stderr",
-          "text": [
-            "The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.\n",
-            "WARNING:bitsandbytes.cextension:The 8-bit optimizer is not available on your device, only available on CUDA for now.\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#Prepare the HuggingFace Dataset\n",
-        "from datasets import Dataset\n",
-        "import pandas as pd\n",
-        "\n",
-        "# Example: df is your DataFrame from CrisisDataCollector\n",
-        "df = pd.DataFrame({\n",
-        "    \"title\": [\"Earthquake in Tokyo\", \"Flood in Germany\"],\n",
-        "    \"body\": [\"Magnitude 6.5 earthquake hit Tokyo causing damage.\",\n",
-        "             \"Severe flooding in Germany affected thousands of people.\"]\n",
-        "})\n",
-        "\n",
-        "dataset = pd.DataFrame({\n",
-        "    \"input_text\": [\"Summarize this crisis report: \" + t for t in df['title']],\n",
-        "    \"target_text\": df['body']\n",
-        "})\n",
-        "\n",
-        "dataset = Dataset.from_pandas(dataset)\n",
-        "\n",
-        "# Tokenize\n",
-        "from transformers import AutoTokenizer\n",
-        "\n",
-        "model_name = \"t5-small\"\n",
-        "tokenizer = AutoTokenizer.from_pretrained(model_name)\n",
-        "\n",
-        "max_input_length = 512\n",
-        "max_target_length = 256\n",
-        "\n",
-        "def tokenize(batch):\n",
-        "    model_inputs = tokenizer(batch[\"input_text\"], max_length=max_input_length, truncation=True)\n",
-        "    labels = tokenizer(batch[\"target_text\"], max_length=max_target_length, truncation=True)\n",
-        "    model_inputs[\"labels\"] = labels[\"input_ids\"]\n",
-        "    return model_inputs\n",
-        "\n",
-        "tokenized_dataset = dataset.map(tokenize, batched=True)\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 49,
-          "referenced_widgets": [
-            "db8406f4b4ee4652b653a517f4e6122d",
-            "4530c6c44d324ce3b50766afe2767aa2",
-            "69a14bf52bd74453a6503a34e54c8df3",
-            "36244141151646ffa0218932651744d9",
-            "44b9e3b6585946189f5dc0716a2fda69",
-            "2a887b54aa11448faea45a3d20551a66",
-            "5fe176588eca4cb892c24da042b892a8",
-            "c5cf054d0dd04255b497dfb039f2346c",
-            "24cd75e9771a4b97a69551f09e54337c",
-            "9259e5c799be49a2b6f0674558dc6b39",
-            "177cebe143c4455bb51e485352f0f8eb"
-          ]
-        },
-        "id": "3ZAoy-giH0Ap",
-        "outputId": "c4ee503b-2e12-4685-be50-a143895107a4"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Map:   0%|          | 0/2 [00:00<?, ? examples/s]"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "db8406f4b4ee4652b653a517f4e6122d"
-            }
-          },
-          "metadata": {}
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "from transformers import AutoModelForSeq2SeqLM, TrainingArguments, Trainer, DataCollatorForSeq2Seq\n",
-        "from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training\n",
-        "\n",
-        "# Load model and apply QLoRA\n",
-        "model = AutoModelForSeq2SeqLM.from_pretrained(model_name, load_in_4bit=True, device_map=\"auto\")\n",
-        "model = prepare_model_for_kbit_training(model)\n",
-        "\n",
-        "lora_config = LoraConfig(\n",
-        "    r=8,\n",
-        "    lora_alpha=32,\n",
-        "    target_modules=[\"q\", \"v\"],\n",
-        "    lora_dropout=0.1,\n",
-        "    bias=\"none\",\n",
-        "    task_type=TaskType.SEQ_2_SEQ_LM\n",
-        ")\n",
-        "model = get_peft_model(model, lora_config)\n",
-        "\n",
-        "data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)\n",
-        "\n",
-        "training_args = TrainingArguments(\n",
-        "    output_dir=\"./crisis_llm_qora\",\n",
-        "    per_device_train_batch_size=4,\n",
-        "    gradient_accumulation_steps=8,\n",
-        "    learning_rate=2e-4,\n",
-        "    num_train_epochs=3,\n",
-        "    logging_steps=50,\n",
-        "    save_strategy=\"steps\",\n",
-        "    save_steps=200,\n",
-        "    fp16=True,\n",
-        "    optim=\"paged_adamw_32bit\",\n",
-        "    do_eval=False,\n",
-        "    save_total_limit=2,\n",
-        "    report_to=\"none\"\n",
-        ")\n",
-        "\n",
-        "trainer = Trainer(\n",
-        "    model=model,\n",
-        "    train_dataset=tokenized_dataset,\n",
-        "    tokenizer=tokenizer,\n",
-        "    args=training_args,\n",
-        "    data_collator=data_collator\n",
-        ")\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "s_z9eD5HH8aU",
-        "outputId": "6f578a85-d3f0-48c2-d8e4-4fe6bb5f0104"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stderr",
-          "text": [
-            "The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "a21f4cce"
-      },
-      "source": [
-        "model_name = \"t5-small\"  # You can replace with a larger model if GPU memory allows\n",
-        "tokenizer = AutoTokenizer.from_pretrained(model_name)"
-      ],
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "trainer.train()\n",
-        "trainer.save_model(\"./crisis_llm_qora\")\n",
-        "from transformers import pipeline\n",
-        "\n",
-        "summarizer = pipeline(\n",
-        "    \"text2text-generation\",\n",
-        "    model=\"./crisis_llm_qora\",\n",
-        "    tokenizer=tokenizer,\n",
-        "    device=0  # GPU\n",
-        ")\n",
-        "\n",
-        "new_reports = [\n",
-        "    \"Earthquake of magnitude 6.5 struck near Tokyo causing significant damage.\"\n",
-        "]\n",
-        "\n",
-        "for report in new_reports:\n",
-        "    summary = summarizer(\"Summarize this crisis report: \" + report, max_length=150, clean_up_tokenization_spaces=True)\n",
-        "    print(summary[0]['generated_text'])\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 356
-        },
-        "id": "5Bbv2fPRIDxa",
-        "outputId": "61598b9a-2cce-435d-dc7d-f8d6356ba382"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "error",
-          "ename": "AttributeError",
-          "evalue": "'NoneType' object has no attribute 'shape'",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipython-input-2666966842.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mtrainer\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtrain\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mtrainer\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msave_model\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"./crisis_llm_qora\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtransformers\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpipeline\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m summarizer = pipeline(\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/transformers/trainer.py\u001b[0m in \u001b[0;36mtrain\u001b[0;34m(self, resume_from_checkpoint, trial, ignore_keys_for_eval, **kwargs)\u001b[0m\n\u001b[1;32m   2236\u001b[0m                 \u001b[0mhf_hub_utils\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0menable_progress_bars\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2237\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2238\u001b[0;31m             return inner_training_loop(\n\u001b[0m\u001b[1;32m   2239\u001b[0m                 \u001b[0margs\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2240\u001b[0m                 \u001b[0mresume_from_checkpoint\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mresume_from_checkpoint\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/transformers/trainer.py\u001b[0m in \u001b[0;36m_inner_training_loop\u001b[0;34m(self, batch_size, args, resume_from_checkpoint, trial, ignore_keys_for_eval)\u001b[0m\n\u001b[1;32m   2646\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2647\u001b[0m                         \u001b[0;32mwith\u001b[0m \u001b[0mcontext\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2648\u001b[0;31m                             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptimizer\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstep\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2649\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2650\u001b[0m                         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcontrol\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcallback_handler\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mon_optimizer_step\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcontrol\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/accelerate/optimizer.py\u001b[0m in \u001b[0;36mstep\u001b[0;34m(self, closure)\u001b[0m\n\u001b[1;32m    177\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_accelerate_step_called\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    178\u001b[0m             \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 179\u001b[0;31m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptimizer\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstep\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mclosure\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    180\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0maccelerator_state\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdistributed_type\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mDistributedType\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mXLA\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    181\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgradient_state\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mis_xla_gradients_synced\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/torch/optim/lr_scheduler.py\u001b[0m in \u001b[0;36mwrapper\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m    131\u001b[0m                     \u001b[0mopt\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mopt_ref\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    132\u001b[0m                     \u001b[0mopt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_opt_called\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mTrue\u001b[0m  \u001b[0;31m# type: ignore[union-attr]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 133\u001b[0;31m                     \u001b[0;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__get__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mopt\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mopt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__class__\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    134\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    135\u001b[0m                 \u001b[0mwrapper\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_wrapped_by_lr_sched\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mTrue\u001b[0m  \u001b[0;31m# type: ignore[attr-defined]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/torch/optim/optimizer.py\u001b[0m in \u001b[0;36mwrapper\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m    514\u001b[0m                             )\n\u001b[1;32m    515\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 516\u001b[0;31m                 \u001b[0mout\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    517\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_optimizer_step_code\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    518\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py\u001b[0m in \u001b[0;36mdecorate_context\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m    118\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mdecorate_context\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    119\u001b[0m         \u001b[0;32mwith\u001b[0m \u001b[0mctx_factory\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 120\u001b[0;31m             \u001b[0;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    121\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    122\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0mdecorate_context\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/bitsandbytes/optim/optimizer.py\u001b[0m in \u001b[0;36mstep\u001b[0;34m(self, closure)\u001b[0m\n\u001b[1;32m    291\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    292\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mprefetch_state\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 293\u001b[0;31m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupdate_step\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mgroup\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mp\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgindex\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mpindex\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    294\u001b[0m                 \u001b[0msync_gpu\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    295\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mis_paged\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0mp\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py\u001b[0m in \u001b[0;36mdecorate_context\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m    118\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mdecorate_context\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    119\u001b[0m         \u001b[0;32mwith\u001b[0m \u001b[0mctx_factory\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 120\u001b[0;31m             \u001b[0;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    121\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    122\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0mdecorate_context\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/bitsandbytes/optim/optimizer.py\u001b[0m in \u001b[0;36mupdate_step\u001b[0;34m(self, group, p, gindex, pindex)\u001b[0m\n\u001b[1;32m    520\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    521\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mstate\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"state1\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdtype\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 522\u001b[0;31m             F.optimizer_update_32bit(\n\u001b[0m\u001b[1;32m    523\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptimizer_name\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    524\u001b[0m                 \u001b[0mgrad\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/bitsandbytes/functional.py\u001b[0m in \u001b[0;36moptimizer_update_32bit\u001b[0;34m(optimizer_name, g, p, state1, beta1, eps, step, lr, state2, beta2, beta3, alpha, weight_decay, gnorm_scale, unorm_vec, max_unorm, skip_zeros)\u001b[0m\n\u001b[1;32m   1185\u001b[0m         \u001b[0mparam_norm\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtorch\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mnorm\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1186\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1187\u001b[0;31m     \u001b[0mis_on_gpu\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mg\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mp\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstate1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstate2\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0munorm_vec\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1188\u001b[0m     torch.ops.bitsandbytes.optimizer_update_32bit(\n\u001b[1;32m   1189\u001b[0m         \u001b[0moptimizer_name\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/bitsandbytes/functional.py\u001b[0m in \u001b[0;36mis_on_gpu\u001b[0;34m(tensors)\u001b[0m\n\u001b[1;32m    360\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0mon_gpu\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    361\u001b[0m         raise RuntimeError(\n\u001b[0;32m--> 362\u001b[0;31m             \u001b[0;34mf\"All input tensors need to be on the same GPU, but found some tensors to not be on a GPU:\\n {[(t.shape, t.device) for t in tensors]}\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    363\u001b[0m         )\n\u001b[1;32m    364\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mAttributeError\u001b[0m: 'NoneType' object has no attribute 'shape'"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "3f29652b",
-        "outputId": "0b9e6416-b2ed-4821-808d-90a85c115e61"
-      },
-      "source": [
-        "# Create an instance of the data collector and collect data\n",
-        "data_collector = CrisisDataCollector()\n",
-        "df = data_collector.collect_all_data()"
-      ],
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Collecting crisis data from multiple sources...\n",
-            "Error collecting ReliefWeb data: 400 Client Error: Bad Request for url: https://api.reliefweb.int/v1/reports?appname=crisis-llm&limit=50&filter%5Bstatus%5D=published&filter%5Bdate.created%5D%5Bfrom%5D=2025-08-18&fields%5Binclude%5D=title&fields%5Binclude%5D=body&fields%5Binclude%5D=date&fields%5Binclude%5D=disaster_type&fields%5Binclude%5D=country&fields%5Binclude%5D=source\n",
-            "Collected 151 alerts from GDACS\n",
-            "Collected 1 earthquakes from USGS\n",
-            "Error collecting news data: unsupported operand type(s) for +: 'NoneType' and 'str'\n",
-            "Total collected: 152 crisis reports\n"
-          ]
-        }
-      ]
-    }
-  ]
-}
+
+        try:
+            response = self.session.get(url, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+
+            articles = []
+            for article in data.get('articles', []):
+                articles.append({
+                    'title': article.get('title', ''),
+                    'body': article.get('description', '') + ' ' + article.get('content', ''),
+                    'date': article.get('publishedAt', ''),
+                    'source': article.get('source', {}).get('name', ''),
+                    'url': article.get('url', ' '),
+                    'data_source': 'news_api'
+                })
+
+            print(f"Collected {len(articles)} news articles")
+            return articles
+
+        except Exception as e:
+            print(f"Error collecting news data: {e}")
+            return []
+
+    def collect_all_data(self):
+        """Collect data from all sources"""
+        all_data = []
+
+        print("Collecting crisis data from multiple sources...")
+
+        # Collect from all sources
+        all_data.extend(self.collect_reliefweb_data())
+        all_data.extend(self.collect_gdacs_data())
+        all_data.extend(self.collect_usgs_data())
+        all_data.extend(self.collect_news_data())
+
+        # Create DataFrame
+        df = pd.DataFrame(all_data)
+
+        # Clean and preprocess
+        if not df.empty:
+            df['body'] = df['body'].fillna('')
+            df['title'] = df['title'].fillna('')
+            df['body'] = df['body'].str.strip()
+            df['title'] = df['title'].str.strip()
+            nbh
+            # Remove empty entries
+            df = df[(df['title'] != '') | (df['body'] != '')]
+
+        print(f"Total collected: {len(df)} crisis reports")
+        return df
+
+# Assume df is the DataFrame from CrisisDataCollector.collect_all_data()
+# We'll create input: "Summarize this crisis report" and target: the body text
+
+def prepare_dataset(df: pd.DataFrame):
+    # Make sure 'body' is not empty
+    df = df[df['body'].str.strip() != ''].reset_index(drop=True)
+
+    dataset = pd.DataFrame({
+        "input_text": ["Summarize this crisis report: " + t for t in df['title']],
+        "target_text": df['body']
+    })
+
+    from datasets import Dataset
+    return Dataset.from_pandas(dataset)
+
+dataset = prepare_dataset(df)
+
+
+model_name = "t5-small"  # You can replace with a larger model if GPU memory allows
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+max_input_length = 512
+max_target_length = 256
+
+def tokenize(batch):
+    model_inputs = tokenizer(batch["input_text"], max_length=max_input_length, truncation=True)
+    labels = tokenizer(batch["target_text"], max_length=max_target_length, truncation=True)
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+tokenized_dataset = dataset.map(tokenize, batched=True)
+
+
+from transformers import AutoModelForSeq2SeqLM
+from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
+from transformers import AutoTokenizer
+# Load base model in 4-bit
+model = AutoModelForSeq2SeqLM.from_pretrained(
+    model_name,
+    load_in_4bit=True,
+    device_map="auto"
+)
+
+# Prepare model for k-bit training
+model = prepare_model_for_kbit_training(model)
+
+# Configure LoRA
+lora_config = LoraConfig(
+    r=8,
+    lora_alpha=32,
+    target_modules=["q", "v"],  # typical target modules
+    lora_dropout=0.1,
+    bias="none",
+    task_type=TaskType.SEQ_2_SEQ_LM
+)
+
+model = get_peft_model(model, lora_config)
+
+
+#Prepare the HuggingFace Dataset
+from datasets import Dataset
+import pandas as pd
+
+# Example: df is your DataFrame from CrisisDataCollector
+df = pd.DataFrame({
+    "title": ["Earthquake in Tokyo", "Flood in Germany"],
+    "body": ["Magnitude 6.5 earthquake hit Tokyo causing damage.",
+             "Severe flooding in Germany affected thousands of people."]
+})
+
+dataset = pd.DataFrame({
+    "input_text": ["Summarize this crisis report: " + t for t in df['title']],
+    "target_text": df['body']
+})
+
+dataset = Dataset.from_pandas(dataset)
+
+# Tokenize
+from transformers import AutoTokenizer
+
+model_name = "t5-small"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+max_input_length = 512
+max_target_length = 256
+
+def tokenize(batch):
+    model_inputs = tokenizer(batch["input_text"], max_length=max_input_length, truncation=True)
+    labels = tokenizer(batch["target_text"], max_length=max_target_length, truncation=True)
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+tokenized_dataset = dataset.map(tokenize, batched=True)
+
+
+from transformers import AutoModelForSeq2SeqLM, TrainingArguments, Trainer, DataCollatorForSeq2Seq
+from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
+
+# Load model and apply QLoRA
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name, load_in_4bit=True, device_map="auto")
+model = prepare_model_for_kbit_training(model)
+
+lora_config = LoraConfig(
+    r=8,
+    lora_alpha=32,
+    target_modules=["q", "v"],
+    lora_dropout=0.1,
+    bias="none",
+    task_type=TaskType.SEQ_2_SEQ_LM
+)
+model = get_peft_model(model, lora_config)
+
+data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
+
+training_args = TrainingArguments(
+    output_dir="./crisis_llm_qora",
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=8,
+    learning_rate=2e-4,
+    num_train_epochs=3,
+    logging_steps=50,
+    save_strategy="steps",
+    save_steps=200,
+    fp16=True,
+    optim="paged_adamw_32bit",
+    do_eval=False,
+    save_total_limit=2,
+    report_to="none"
+)
+
+trainer = Trainer(
+    model=model,
+    train_dataset=tokenized_dataset,
+    tokenizer=tokenizer,
+    args=training_args,
+    data_collator=data_collator
+)
+
+
+model_name = "t5-small"  # You can replace with a larger model if GPU memory allows
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+trainer.train()
+trainer.save_model("./crisis_llm_qora")
+from transformers import pipeline
+
+summarizer = pipeline(
+    "text2text-generation",
+    model="./crisis_llm_qora",
+    tokenizer=tokenizer,
+    device=0  # GPU
+)
+
+new_reports = [
+    "Earthquake of magnitude 6.5 struck near Tokyo causing significant damage."
+]
+
+for report in new_reports:
+    summary = summarizer("Summarize this crisis report: " + report, max_length=150, clean_up_tokenization_spaces=True)
+    print(summary[0]['generated_text'])
+
+
+# Create an instance of the data collector and collect data
+data_collector = CrisisDataCollector()
+df = data_collector.collect_all_data()
